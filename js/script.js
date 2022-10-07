@@ -29,20 +29,18 @@ let finalPrice = bill
 
 const priceResult = finalPrice.toFixed(2);
     
- submit. addEventListener("click", function refreshPage() {
- document. getElementById("km").innerHTML = `Chilometri da percorrere: ${kilometres}`;
-document. getElementById("age").innerHTML = `La tua età: ${userAge}`;
-document. getElementById("finalbill").innerHTML = `Il prezzo: € ${priceResult}`
-document. getElementById ("discount"). innerHTML  += ` ${discountPerAge}`
-        
-})
 let discountPerAge = "0"
 if (userAge < 18)
     discountPerAge = "20%"
 else if (userAge > 65)
     discountPerAge = "40%"
-    
-// - il prezzo del biglietto è definito in base ai km (0.21 € al km)
-// - va applicato uno sconto del 20% per i minorenni
-// - va applicato uno sconto del 40% per gli over 65.
+
+const ticketNumber = parseInt(Math.random() * (10000));
 // OUTPUT
+ submit. addEventListener("click", function refreshPage() {
+ document. getElementById("km").innerHTML = `Chilometri da percorrere: ${kilometres}`;
+document. getElementById("age").innerHTML = `La tua età: ${userAge}`;
+document. getElementById("finalbill").innerHTML = `Il prezzo: € ${priceResult}`
+document. getElementById ("discount"). innerHTML = `Sconto applicato ${discountPerAge}`
+document. getElementById ("ticket") .innerHTML = `il numero del tuo biglietto: ${ticketNumber}`      
+})

@@ -1,0 +1,53 @@
+body {
+    background-color: rgb(100, 100, 255);
+}
+
+.container {
+    width: 70%;
+    max-width: 900px;
+    margin: auto;
+    padding:2rem;
+    background-color: white;
+    border-radius: 10px;
+    position:relative;
+    left:0;
+    top:50vh;
+    transform:translateY(-50%);
+}
+.top h1 {
+    background-color: rgb(211, 56, 56);
+    padding:2.5rem 1rem 1.5rem;
+    border-radius: 10px 10px 0 0;
+    font-size:4rem;
+    color:white;
+}
+.top h2 {
+    background-color: darkgray;
+    padding:.5rem 1rem;
+    color:white;
+    text-align: center;
+}
+.bottom {
+    margin-top: 1.5rem;
+}
+.inputs {
+    background-color: rgb(211, 56, 56);
+    padding:2.5rem 1rem;
+}
+input:focus {
+    border: 1px solid white;
+}
+button {
+    margin-left:20px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+button:hover {
+ color: rgb(61, 158, 93);
+}
+h3 {
+    padding: 1rem;
+    border-bottom: 1px solid black;
+    font-size: 1.6rem;;
+}
