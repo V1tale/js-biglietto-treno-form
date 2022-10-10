@@ -4,7 +4,6 @@ body {
 
 .container {
     width: 70%;
-    max-width: 900px;
     margin: auto;
     padding:2rem;
     background-color: white;
@@ -14,18 +13,32 @@ body {
     top:50vh;
     transform:translateY(-50%);
 }
-.top h1 {
+header {
+    border-bottom: 5px solid white;
+}
+.top .flex {
     background-color: rgb(211, 56, 56);
     padding:2.5rem 1rem 1.5rem;
     border-radius: 10px 10px 0 0;
+
+}
+.top .flex {
+    justify-content: space-between;
+}
+.top h1 {
     font-size:4rem;
     color:white;
 }
 .top h2 {
+    font-size: 4rem;
+    color: white;
+}
+.top h4 {
     background-color: darkgray;
     padding:.5rem 1rem;
     color:white;
     text-align: center;
+    font-size: 1.6rem;
 }
 .bottom {
     margin-top: 1.5rem;
@@ -33,9 +46,25 @@ body {
 .inputs {
     background-color: rgb(211, 56, 56);
     padding:2.5rem 1rem;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 input:focus {
     border: 1px solid white;
+}
+header h2 {
+    font-size:3rem;
+    color:white;
+}
+.texts {
+    justify-content: space-between;
+    width:50%;
+
+}
+.texts h4 {
+    font-size: 1.4rem;
+    padding-bottom:1rem;
+    color:white;
 }
 button {
     margin-left:20px;
@@ -45,6 +74,7 @@ button {
 }
 button:hover {
  color: rgb(61, 158, 93);
+ cursor: pointer;
 }
 h3 {
     padding: 1rem;

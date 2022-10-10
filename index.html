@@ -11,21 +11,38 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- HEADER -->
+    <header>
+        <div class=".container">
+            <div class="inputs flex">
+                <div class="texts flex">
+                    <h2>RandomTrip</h2>
+                    <div class="distance">
+                        <h4> Inserisci i chilometri che vuoi percorrere</h4>
+                        <input type="text" id="kilometres" placeholder="numero di chilometri">
+                    </div>
+                    <div class="age">
+                        <h4>Inserisci la tua età</h4>
+                        <input type="text" name="" id="userage" placeholder="La tua età">
+                    </div>
+                </div>
+                <button id="submit">Calcola biglietto</button>
+            </div>
+    </header>
+    <!-- /HEADER -->
     <!-- MAIN -->
     <main>
         <div class="container">
             <div class="top">
-                <h1>RandomTrip</h1>
-                <h2>La destinazione che non ti aspetti</h2>
+                <div class="flex">
+                    <h1>RandomTrip</h1>
+                    <h2>Ticket</h2>
+                </div>
+                <h4>La destinazione che non ti aspetti</h4>
             </div>
             <div class="bottom">
-                <div class="inputs">
-                    <input type="text" id="kilometres">
-                    <input type="text" name="" id="userage">
-                    <button id="submit">Calcola biglietto</button>
-                </div>
-                <h3 id="km">Quanti chilometri vuoi percorrere?:</h3>
-                <h3 id="age">Quanti anni hai?</h3>
+                <h3 id="km">Chilometri da percorrere:</h3>
+                <h3 id="age">La tua età</h3>
                 <h3 id="finalbill">Il prezzo:</h3>
                 <h3 id="discount">Sconto applicato</h3>
                 <h3 id="ticket">Il numero del tuo biglietto</h3>
